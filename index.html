@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>$moongrip - Terminal Access</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #0a0a0a;
+            color: #00ffcc;
+            font-family: "Courier New", monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        .terminal {
+            width: 90%;
+            max-width: 780px;
+            background-color: #111;
+            border: 3px solid #00ffcc;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 0 20px #00ffcc55;
+            animation: flicker 1.5s infinite alternate;
+        }
+
+        @keyframes flicker {
+            0% {
+                box-shadow: 0 0 8px #00ffcc44;
+            }
+
+            100% {
+                box-shadow: 0 0 16px #00ffcc88;
+            }
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+            color: #00ffff;
+            text-shadow: 0 0 8px #00ffff88;
+        }
+
+        .ascii {
+            font-size: 12px;
+            line-height: 1.2;
+            color: #cccccc;
+            margin: 20px 0;
+            white-space: pre;
+        }
+
+        .description {
+            margin: 20px 0;
+            color: #00ffaa;
+        }
+
+        .ascii img {
+            width: 180px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .btn {
+            margin-top: 30px;
+            background: black;
+            color: #00ffcc;
+            padding: 12px 24px;
+            border: 1px solid #00ffcc;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background: #00ffcc;
+            color: #000;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #888;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="terminal">
+        <div class="logo">~$moongrip 🧤🌕</div>
+
+        <div class="ascii">
+            ACCESS GRANTED...
+            <br>
+            INITIATING GLOVE PROTOCOL_42...
+            <br><br>
+            ███▌ SECURE THE MOON
+            ███▌ NO SLIP. NO DIP.
+            ███▌ LAUNCH VECTOR: 🔁 SIDEWAYS
+            ███▌ STATUS: UNRELEASED MADNESS
+        </div>
+
+        <div class="description">
+            Welcome to the memechain's most *grippy* asset. $moongrip is not your average orbital rug.<br />
+            <br />
+            <strong>🔓 ZERO utility.<br />
+                🧤 MAXIMUM cling.<br />
+                💫 Still holding since block #4206969.</strong>
+        </div>
+
+        <div class="ascii">
+            <img src="glove.jpeg" alt="moon glove" />
+        </div>
+
+        <a class="btn" href="https://pump.fun" target="_blank">Launch $moongrip on Pump.fun</a>
+
+        <div class="footer">>> TRANSMISSION ENDED — CTRL+C to rug</div>
+    </div>
+</body>
+
+</html>
